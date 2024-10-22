@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./StartScreen.module.scss";
+import backgroundImage from "../../assets/background-image.png";
 
 const StartScreen: React.FC<{ onStart: () => void }> = ({ onStart }) => {
   const navigate = useNavigate(); // navigate 훅 사용
@@ -11,12 +12,15 @@ const StartScreen: React.FC<{ onStart: () => void }> = ({ onStart }) => {
   };
 
   return (
-    <div className={styles.startScreen}>
+    <div
+      className={styles.startScreen}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
       <div className={styles.content}>
-        <h1>만나서 반가워요 :)</h1>
-        <p>
+        <div className={styles.startText}>
+          만나서 반가워요 :)<br></br>
           오늘의 <strong>하사람</strong>은 누구일까요?
-        </p>
+        </div>
         <button className={styles.startButton} onClick={handleStart}>
           지금 바로 시작하기
         </button>
