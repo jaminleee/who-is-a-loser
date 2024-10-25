@@ -1,0 +1,21 @@
+.startButton {
+  position: fixed;
+  bottom: 2rem;
+  padding: 1rem 5rem;
+  font-size: 1.2rem;
+  color: #333; // 버튼 텍스트 색상
+  background-color: #cce4ff; // 버튼 배경 색상
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 2rem;
+
+  &:hover {
+    background-color: #8bbbe4; // 호버 시 버튼 색상 변화
+  }
+
+  &:active {
+    transform: scale(0.98); // 클릭 시 살짝 눌리는 효과
+  }
+}

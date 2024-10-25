@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem; // 핸드폰 화면 크기 정도로 제한
+  padding: 8rem 1.5rem;
+}
+
+.startText {
+  color: #333;
+  font-size: 1.7rem;
+  text-align: left;
+}

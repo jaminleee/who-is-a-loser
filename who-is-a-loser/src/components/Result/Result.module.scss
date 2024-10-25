@@ -1,0 +1,80 @@
+/* Result.module.scss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #cce4ff, #3091ff);
+  color: #ffffff;
+  text-align: center;
+  font-family: "Pretendard", sans-serif;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: pop-in 1s ease forwards;
+}
+
+.homeButton {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 60%;
+  max-width: 15rem;
+  text-align: center;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #3091ff;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.buttonWrapper {
+  width: 100%;
+}
+.winner {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #002aff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  animation: fade-in 2s ease forwards;
+}
+
+/* 애니메이션 */
+@keyframes pop-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
