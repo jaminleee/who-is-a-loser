@@ -54,9 +54,8 @@ const Question: React.FC<QuestionProps> = ({
       </div>
 
       <h2 className={styles.questionText}>
-        질문: {question || "질문을 불러오는 중입니다..."}
+        {question || "질문을 불러오는 중입니다..."}
       </h2>
-      <p>해당하는 사람을 선택하세요:</p>
       <div className={styles.buttonGrid}>
         {players.map((player, index) => (
           <button

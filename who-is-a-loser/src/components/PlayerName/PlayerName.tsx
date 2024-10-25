@@ -37,7 +37,6 @@ const PlayerName: React.FC<PlayerNameProps> = ({
             className={styles.inputName}
             key={index}
             type="text"
-            placeholder={`참가자 ${index + 1}`}
             value={name}
             onChange={(e) => handleNameChange(index, e.target.value)}
           />
