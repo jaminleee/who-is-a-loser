@@ -111,6 +111,8 @@ function App() {
             players={players}
             onVote={handleVote}
             isLastQuestion={currentRound >= playerCount} // 마지막 질문 여부 전달
+            currentRound={currentRound}
+            totalRounds={playerCount}
           />
         }
       />

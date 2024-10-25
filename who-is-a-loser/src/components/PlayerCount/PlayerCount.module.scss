@@ -1,0 +1,56 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%; // 전체 너비 사용
+  max-width: 375px; // 핸드폰 화면 크기 정도로 제한
+  padding: 60px 24px; // 위쪽과 아래쪽 여백을 주고, 좌우에 패딩 설정
+  gap: 24px;
+}
+
+.questionNumText {
+  color: #333;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.questionText {
+  color: #333;
+  font-size: 1.7rem;
+  text-align: left;
+}
+
+.rowContent {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1.7rem;
+  align-items: center;
+}
+
+.inputCount {
+  padding: 0.7rem;
+  font-size: 1.7rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 30%;
+  box-sizing: border-box; // 패딩을 포함한 너비 계산
+}
+
+.nextButton {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #333; // 버튼 텍스트 색상
+  background-color: #cce4ff; // 버튼 배경 색상
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #8bbbe4; // 호버 시 버튼 색상 변화
+  }
+
+  &:active {
+    transform: scale(0.98); // 클릭 시 살짝 눌리는 효과
+  }
+}

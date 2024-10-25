@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // 한 줄에 2개의 열로 설정
+  gap: 15px; // 텍스트 필드 간의 간격 설정
+  width: 100%; // 그리드의 전체 너비를 사용하도록 설정
+  max-width: 400px; // 그리드의 최대 너비를 제한하여 모바일 환경에서도 보기 좋게 설정
+}
+
+.inputName {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box; // 패딩을 포함한 너비 계산
+}
+
+.questionNumText {
+  color: #333;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.questionText {
+  color: #333;
+  font-size: 1.7rem;
+  text-align: left;
+}
+
+.nextButton {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #333; // 버튼 텍스트 색상
+  background-color: #cce4ff; // 버튼 배경 색상
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #8bbbe4; // 호버 시 버튼 색상 변화
+  }
+
+  &:active {
+    transform: scale(0.98); // 클릭 시 살짝 눌리는 효과
+  }
+}
